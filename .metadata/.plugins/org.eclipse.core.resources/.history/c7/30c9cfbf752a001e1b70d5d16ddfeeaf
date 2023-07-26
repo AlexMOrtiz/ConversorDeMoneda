@@ -1,0 +1,65 @@
+package conversorMoneda;
+
+import javax.swing.JOptionPane;
+
+public class function {
+
+		ConvertirMoneda monedas = new ConvertirMoneda();
+		ConvertirMonedasAPesos pesos = new ConvertirMonedasAPesos();
+	
+	public void ConvertirMoneda(double Minput) {
+		String opcion = (JOptionPane.showInputDialog(null,
+				"Elige la moneda a la que deseas convertir tu dinero ", "Monedas",
+				JOptionPane.PLAIN_MESSAGE, null, new Object[]
+						{"De Pesos México a Dolar", "De Pesos México a Euros", "De Pesos México a Libras", "De Pesos México a Yen", "De Pesos México a Won SurCoreano", "De Pesos México a Yuan", "De Pesos México a Peso Colombia",
+								"De Dolar a Peso Mexico", "De Euro a Peso Mexico", "De  Libra a Peso Mexico", "De Yen a Peso Mexico", "De Won SurCoreano a Peso Mexico", "De Won a Peso Mexico", "De Peso Colombia a Peso Mexico"}, 
+						"Seleccion")).toString();
+		
+		switch(opcion) {
+		case "De Pesos México a Dolar":
+			monedas.ConvertirPesosADolares(Minput);
+			break;
+		case "De Pesos México a Euros":
+			monedas.ConvertirPesosAEuros(Minput);
+			break;
+		case "De Pesos México a Libras":
+			monedas.ConvertirPesosALibras(Minput);
+			break;
+		case "De Pesos México a Yen":
+			monedas.ConvertirPesosAYen(Minput);
+			break;
+		case "De Pesos México a Won SurCoreano":
+			monedas.ConvertirPesosAWuones(Minput);
+			break;
+		case "De Pesos México a Yuan":
+			monedas.ConvertirPesosAYuanes(Minput);
+			break;
+		case "De Pesos México a Peso Colombia":
+			monedas.ConvertirPMexicanoAPColombiano(Minput);
+			break;
+			
+		case "De Dolar a Peso Mexico":
+			pesos.ConvertirDolaresAPesos(Minput);
+			break;
+		case "De Euro a Peso Mexicano":
+			pesos.ConvertirEruosAPesos(Minput);
+			break;
+		case "De Libra a Peso Mexico":
+			pesos.ConvertirLibrasAPesos(Minput);
+			break;
+		case "De Yen a Peso Mexico":
+			pesos.ConvertirYenAPesos(Minput);
+			break;
+		case " De Won a Peso Mexico":
+			pesos.ConvertirWonAPesos(Minput);
+			break;
+		case "De Yuan SurCoreano a Peso Mexico":
+			pesos.ConvertirYuanAPesos(Minput);
+			break;
+		case "De Peso Colombia a Peso Mexico":
+			pesos.ConvertirPColmbianoAPMexicano(Minput);
+			break;
+		}
+	}
+	
+}

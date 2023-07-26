@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\HP\Desktop\alex\java-2021-03\ProyectoConversos\.metadata\.plugins\org.eclipse.jdt.core
+3542475962.index
+1696264553.index
